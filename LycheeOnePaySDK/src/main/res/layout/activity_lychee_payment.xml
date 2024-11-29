@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="">
+
+        <TextView
+            android:id="@+id/text_view_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/title_pay_with_lychee"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:id="@+id/image_view_store_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/laychee"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/text_view_store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:gravity="center_horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Mart" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text_view_payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:gravity="end"
+                android:layoutDirection="ltr"
+                android:textColor="#016fd0"
+                android:textDirection="ltr"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_payment_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/enter_your_onepay_code_to_pay"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edit_text_voucher_code"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_border"
+            android:drawableEnd="@drawable/one_pay_disabled"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:gravity="center_vertical"
+            android:hint="9EIMBD"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:theme="@style/LycheeEditTextStyle" />
+
+        <TextView
+            android:id="@+id/text_view_voucher_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_pay_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_rounded_disabled"
+            android:gravity="center"
+            android:enabled="false"
+            android:padding="12dp"
+            android:text="@string/button_pay_now"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/text_view_no_voucher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/no_voucher_get_a_code"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+>
+
+            <ImageView
+                android:id="@+id/image_view_secure_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/secured_icon"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/text_view_secured_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/secured_by"
+                android:fontFamily="@font/sf_pro_text_light"
+                android:textColor="#444444"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/onepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:textColor="@android:color/black"
+                android:text=" onepay"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

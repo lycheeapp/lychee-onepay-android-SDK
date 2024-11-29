@@ -1,0 +1,16 @@
+<resources>
+    <string name="title_pay_with_lychee">Pay with Lychee</string>
+    <string name="enter_your_onepay_code_to_pay">Enter your onepay code to pay</string>
+    <string name="error_please_enter_valid_code">Please enter valid code</string>
+    <string name="error_voucher_must_match_the_payment_amount">Voucher must match the payment amount</string>
+    <string name="error_insufficient_balance">Insufficient balance</string>
+    <string name="error_code_does_not_exits">Code does not exits</string>
+    <string name="no_voucher_get_a_code"><u>No voucher? Get a code.</u></string>
+    <string name="button_pay_now">Pay Now</string>
+    <string name="secured_by">Secured by</string>
+    <string name="your_payment_of_has_been_successfully_done">Your payment of %1$s has been successfully done.</string>
+    <string name="payment_success">Payment Success!</string>
+    <string name="button_done">Done</string>
+
+
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="title_pay_with_lychee">إدفع باستخدام ليتشي</string>
+    <string name="enter_your_onepay_code_to_pay">أدخل رمز onepay الخاص بك للدفع</string>
+    <string name="error_please_enter_valid_code">يرجى إدخال كود صالح</string>
+    <string name="error_voucher_must_match_the_payment_amount">يجب أن تتوافق القسيمه مع قيمة الدفع</string>
+    <string name="error_insufficient_balance">الرصيد غير كافي</string>
+    <string name="error_code_does_not_exits">الكود غير موجود</string>
+    <string name="no_voucher_get_a_code"><u>لا يوجد قسيمة؟ احصل على كود</u></string>
+    <string name="button_pay_now">إدفع الآن</string>
+    <string name="secured_by">مؤمّن بواسطة</string>
+    <string name="your_payment_of_has_been_successfully_done">تمت عملية الدفع الخاصة بك بمبلغ %1$s بنجاح.</string>
+    <string name="payment_success">تم الدفع بنجاح!</string>
+    <string name="button_done">تم</string>
+</resources>

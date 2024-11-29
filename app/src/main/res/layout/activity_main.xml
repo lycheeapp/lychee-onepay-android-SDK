@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="16dp">
+
+    <!-- Amount Input Field -->
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- Pay Button -->
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay Now" />
+
+</LinearLayout>
